@@ -1,0 +1,2 @@
+# PotatoDiseaseClassification
+This Python project implements a deep learning-based image classification pipeline to identify various potato diseases from leaf or tuber images using transfer learning. It leverages the MobileNetV2 architecture pretrained on ImageNet and fine-tunes it to classify seven categories: Black Scurf, Blackleg, Common Scab, Pink Rot, Dry Rot, Miscellaneous, and Healthy Potatoes.
