@@ -2,11 +2,25 @@
 
 This Python project implements a deep learning-based image classification pipeline to identify various potato diseases from leaf or tuber images using transfer learning. It leverages the MobileNetV2 architecture pretrained on ImageNet and fine-tunes it to classify seven categories: Black Scurf, Blackleg, Common Scab, Pink Rot, Dry Rot, Miscellaneous, and Healthy Potatoes.
 
+
 ## Dataset
 
 - **Source**: [Kaggle – Potato Diseases Dataset by mukaffimoin](https://www.kaggle.com/datasets/mukaffimoin/potato-diseases-datasets)
-- **Description**: A labeled collection of potato images containing healthy and several disease categories.
-- **Access**: The dataset is downloaded via `kagglehub` and automatically extracted in the project workflow.
+- **Description**: A labeled collection of potato tuber images containing healthy samples and several disease categories.
+- **Two ways to load data**  
+  The code supports both local folders and automatic download.  
+  ```python
+  # Option 1: use a local copy
+  local_dataset_path = "path/to/your/potato_dataset"
+
+  # Option 2: leave it as None and the dataset will be
+  # downloaded from Kaggle via kagglehub
+  local_dataset_path = None
+  ```
+  When `local_dataset_path` is `None`, the script calls  
+  `kagglehub.dataset_download("mukaffimoin/potato-diseases-datasets")` and extracts the archive automatically.  
+  If you provide a path, the code skips the download and loads images directly from that folder.
+
 
 ## Project Overview
 
