@@ -5,7 +5,7 @@ This Python project implements a deep learning-based image classification pipeli
 ## Dataset
 
 - **Source**: [Kaggle – Potato Diseases Dataset by mukaffimoin](https://www.kaggle.com/datasets/mukaffimoin/potato-diseases-datasets)
-- **Description**: A labeled collection of potato leaf images containing healthy leaves and several disease categories.
+- **Description**: A labeled collection of potato images containing healthy and several disease categories.
 - **Access**: The dataset is downloaded via `kagglehub` and automatically extracted in the project workflow.
 
 ## Project Overview
@@ -42,13 +42,6 @@ pip install tensorflow numpy pandas opencv-python pillow seaborn scikit-image sc
 
 If you are using a GPU, make sure to install the correct version of TensorFlow for GPU support.
 [Install TensorFlow](https://www.tensorflow.org/install/pip)
-
-## Results
-
-- High classification accuracy across multiple disease types
-- Clear separation of classes in t-SNE projections
-- Insightful visualizations for image properties and dataset bias
-- Modular and reproducible pipeline suitable for transfer to similar agricultural datasets
 
 
 ## License
